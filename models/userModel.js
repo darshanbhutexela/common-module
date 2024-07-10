@@ -17,6 +17,10 @@ const UserSchema = new Schema({
     unique: true,
     required: true
   },
+  isActive: {
+    type: Boolean,
+    required: true
+  },
   createdOn: {
     type: Date,
     default: Date.now
